@@ -60,7 +60,7 @@ export function Home() {
             Master's Thesis · Data Science
           </p>
           <h1 className="text-4xl font-bold mb-4 leading-tight">
-            Predicting Residential Natural Gas Consumption in the Netherlands
+            Predicting Residential Natural Gas Consumption at Municipal Level Using Machine Learning
           </h1>
           <p className="text-slate-300 text-lg mb-2 max-w-2xl">
             Can machine learning accurately predict how much gas Dutch municipalities consume?
@@ -83,7 +83,7 @@ export function Home() {
             <CardContent className="pt-6">
               <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-2">Main question</p>
               <p className="text-slate-800 text-lg font-medium leading-relaxed">
-                How accurately can machine learning models predict residential natural gas consumption at the municipal level in the Netherlands?
+                How accurately can machine learning models predict residential natural gas consumption at the municipal level?
               </p>
             </CardContent>
           </Card>

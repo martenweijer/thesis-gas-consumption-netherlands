@@ -20,7 +20,7 @@ export function MapView() {
               <Home className="w-5 h-5" />
               <span className="text-sm">Home</span>
             </Link>
-            <h1 className="text-lg font-medium">Netherlands Gas Consumption by Municipality</h1>
+            <h1 className="text-lg font-medium">Residential Gas Consumption by Municipality</h1>
           </div>
           <div className="flex gap-1">
             {YEARS.map((year) => (
