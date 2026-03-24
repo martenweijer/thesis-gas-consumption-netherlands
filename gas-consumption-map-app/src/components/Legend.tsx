@@ -15,7 +15,7 @@ export function Legend({ min, max }: LegendProps) {
     const value = min + stepSize * i;
     items.push({
       value: Math.round(value),
-      color: getColorForConsumption(value, min, max),
+      color: getColorForConsumption(value),
     });
   }
 

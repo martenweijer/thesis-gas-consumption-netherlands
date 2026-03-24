@@ -109,7 +109,7 @@ export function GasConsumptionMap({ selectedYear }: GasConsumptionMapProps) {
         : null;
 
     const color = consumption !== null
-      ? getColorForConsumption(consumption, consumptionRange.min, consumptionRange.max)
+      ? getColorForConsumption(consumption)
       : "#ccc";
 
     return {
@@ -131,7 +131,7 @@ export function GasConsumptionMap({ selectedYear }: GasConsumptionMapProps) {
     const consumption = consumptionByMunicipality[name];
 
     return {
-      fillColor: getColorForConsumption(consumption, consumptionRange.min, consumptionRange.max),
+      fillColor: getColorForConsumption(consumption),
       weight: 1,
       opacity: 1,
       color: "#666",

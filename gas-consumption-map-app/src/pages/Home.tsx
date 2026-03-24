@@ -53,8 +53,21 @@ export function Home() {
   return (
     <div className="min-h-screen bg-white">
 
+      {/* Header */}
+      <header className="bg-slate-800">
+        <div className="max-w-4xl mx-auto px-6 py-4 flex justify-end">
+          <Link
+            to="/map"
+            className="inline-flex items-center gap-2 bg-white text-slate-800 px-4 py-2 rounded-lg font-medium text-sm hover:bg-slate-100 transition-colors"
+          >
+            Explore Map
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </header>
+
       {/* Hero */}
-      <section className="bg-slate-800 text-white py-24">
+      <section className="bg-slate-800 text-white pb-24 pt-8">
         <div className="max-w-4xl mx-auto px-6">
           <p className="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-4">
             Master's Thesis · Data Science

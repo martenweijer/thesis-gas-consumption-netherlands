@@ -86,21 +86,17 @@ export function getConsumptionRange(
 }
 
 export function getColorForConsumption(
-  value: number,
-  min: number,
-  max: number
+  value: number
 ): string {
   if (value === null || value === undefined) {
     return "#ccc";
   }
 
-  const ratio = (value - min) / (max - min);
-
-  // Light red (low) to dark red (high)
-  // Light: rgb(254, 224, 210) -> Dark: rgb(165, 15, 21)
-  const r = Math.round(254 - ratio * (254 - 165));
-  const g = Math.round(224 - ratio * (224 - 15));
-  const b = Math.round(210 - ratio * (210 - 21));
-
-  return `rgb(${r}, ${g}, ${b})`;
+  if (value < 600) return '#fee5d9'
+  if (value < 800) return '#fcbba1'
+  if (value < 1000) return '#fc9272'
+  if (value < 1200) return '#fb6a4a'
+  if (value < 1400) return '#ef3b2c'
+  if (value < 1600) return '#cb181d'
+  return '#99000d'
 }
