@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, HelpCircle, Map } from "lucide-react";
+import { ArrowRight, BookOpen, HelpCircle, Map, SearchX } from "lucide-react";
 import {
   LineChart,
   Line,
@@ -85,8 +85,28 @@ export function Home() {
         </div>
       </section>
 
-      {/* Research Questions */}
+      {/* Abstract */}
       <section className="py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex items-center gap-3 mb-6">
+            <BookOpen className="w-6 h-6 text-slate-400" />
+            <h2 className="text-2xl font-bold text-slate-800">Abstract</h2>
+          </div>
+          <Card>
+            <CardContent className="pt-6">
+              <p className="text-slate-600 leading-relaxed mb-4">
+                Residential natural gas consumption is still the largest source of CO₂ emissions for most Dutch households, and municipalities are now responsible for planning the transition away from it. But existing research at the municipal level hasn't moved much beyond descriptive statistics and simple regression. That's the gap this thesis tries to fill.
+              </p>
+              <p className="text-slate-600 leading-relaxed">
+                This thesis applies Random Forest and XGBoost to a panel dataset covering all ~340 Dutch municipalities from 2015 to 2024, combining CBS gas consumption figures with housing stock data from Kadaster/BAG, socio-demographic variables, and heating degree days from KNMI. Model performance is measured using RMSE, MAE, and R², with SHAP values used to identify which features drive consumption differences between municipalities. Tree-based models outperform linear baselines. Housing stock composition and weather [will probably] turn out to be the strongest predictors.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Research Questions */}
+      <section className="py-16 bg-slate-50">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-6">
             <HelpCircle className="w-6 h-6 text-slate-400" />
@@ -115,8 +135,48 @@ export function Home() {
         </div>
       </section>
 
+      {/* Research Gaps */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex items-center gap-3 mb-2">
+            <SearchX className="w-6 h-6 text-slate-400" />
+            <h2 className="text-2xl font-bold text-slate-800">Research Gaps</h2>
+          </div>
+          <p className="text-slate-500 text-sm mb-8">
+            Despite rich data infrastructure and an active policy need, three gaps in the literature motivated this thesis.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {[
+              {
+                label: "Gap 1",
+                title: "No municipal-level ML models",
+                body: "Existing Dutch research stops at descriptive statistics and simple regression. No study has applied machine learning to predict gas consumption across all ~340 municipalities.",
+              },
+              {
+                label: "Gap 2",
+                title: "Building-level bias",
+                body: "Most energy ML research works at the building level where fine-grained features are available. Aggregate municipal studies are rare and rely on weaker proxy variables.",
+              },
+              {
+                label: "Gap 3",
+                title: "Cross-sectional data only",
+                body: "Most municipal studies use a single year, making it impossible to separate weather effects from structural trends. A longitudinal panel is needed to control for heating degree days properly.",
+              },
+            ].map(({ label, title, body }) => (
+              <Card key={label}>
+                <CardContent className="pt-6">
+                  <p className="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">{label}</p>
+                  <p className="text-slate-800 font-semibold mb-2">{title}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed">{body}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Explore the Data */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex items-center gap-3 mb-2">
             <Map className="w-6 h-6 text-slate-400" />
