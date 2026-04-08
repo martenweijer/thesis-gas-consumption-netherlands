@@ -1,5 +1,10 @@
 # Papers researched for the literature review
 
-| # | Title | Authors | Year |
-| --- | ------- | --------- | ------ |
-| 1 | [Machine Learning and Forecasting Approaches for Predicting Natural Gas Consumption](1-machine-learning-and-forecasting-approaches-for-predicting-natural-gas-consumption/summary.md) | Rahmatov et al. | 2024 |
+| # | Title                                                                                                                                                                                                                                                                   | Authors | Year |
+| --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| --------- | ------ |
+| 1 | [Machine Learning and Forecasting Approaches for Predicting Natural Gas Consumption](1-machine-learning-and-forecasting-approaches-for-predicting-natural-gas-consumption/summary.md)                                                                                   | Rahmatov et al. | 2024 |
+| 2 | [Predicting Gas Consumption for Energy Savings and Cost Reduction in District Heating Systems Using Decision Tree Algorithms](2-predicting-gas-consumption-for-energy-savings-and-cost-reduction-in-district-heating-systems-using-decision-tree-algorithms/summary.md) | Tasić et al. | 2026 |
+| 3 | [Explainable AI in Energy Forecasting: Understanding Natural Gas Consumption Through Interpretable Machine Learning Models](3-explainable-ai-in-energy-forecasting/summary.md)                                                                                          | Eshita, Mowla, Mahi | 2025 |
+| 4 | [Evaluating Machine Learning Techniques for Enhanced Prediction of Building Energy Consumption](4-evaluating-machine-learning-techniques-for-enhanced-prediction-of-building-energy-consumption/summary.md)                                                             | Vonitsanos, Kanavos, Mylonas | 2024 |
+| 5 | [Machine Learning-Based Localized Predictive Modeling of Household Energy Consumption in the Netherlands](5-machine-learning-based-localized-predictive-modeling-of-household-energy-consumption-in-the-netherlands/summary.md) | Jafarigorzin et al. | 2025 |
+| 6 | [A Comparison Between Different Machine Learning Techniques for Predicting Heating Energy Consumption for Residential Buildings in a Cold Climate](6-a-comparison-between-different-machine-learning-techniques-for-predicting-heating-energy-consumption-for-residential-buildings-in-a-cold-climate/summary.md) | Vaisi et al. | 2025 |
